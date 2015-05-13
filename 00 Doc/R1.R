@@ -1,0 +1,22 @@
+library("bitops")
+library("gdata")
+library("ggplot2")
+library("gplots")
+library("grid")
+library("jsonlite")
+library("knitr")
+library("plyr")
+library("RCurl")
+library("reshape2")
+library("rmarkdown")
+library("tidyr")
+library("dplyr")
+
+births <- read.csv("births_2012.csv")
+deaths <- read.csv("deaths_2012.csv")
+
+m_birth <- melt(births, id = "zip_code")
+m_death <- melt(deaths, id = "zip_code")
+
+write.csv(m_birth,"births.csv",row.names=FALSE,na = "")
+write.csv(m_death,"deaths.csv",row.names=FALSE,na = "")
