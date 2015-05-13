@@ -1,0 +1,30 @@
+---
+title: "DV_FinalProject"
+author: "Zach, Brian, Henry"
+date: "May 12, 2015"
+output: html_document
+---
+
+#Summary
+####In this project, the team is trying to explore the births and deaths in California. We will be first, comparing the rates of births and deaths, then we will explore further into factors such as race, age, area by zip_code, death cause, and other contributing elements.
+
+##Birth Rate:
+####In the following boxplot, we will see the average birth rates in California by zip code:
+![](./avg_birth.png)
+
+####In this graph, we can easily identify the 5 number summary of average birth rates in the state of California.
+
+##Death Rate:
+####Next, will will see the average death rates in California by zip code:
+![](./avg_death.png)
+
+####For easier comparison, we have chose to produce another boxplot that shares the same information.
+#####Notice there are less outliers in the death graph. Also, the death graph shows less deaths than births.
+
+####To reproduce this, follow the following steps:
+######1.) Using R Studio, make sure to have the correct packages (ggplot2, RCurl, reshape2, and tidyr).
+######2.) For the birth plot, use piping, we manipulate the birth data by first grouping it by zip_code, the summarize it by avg(total_birth), and lastly, produce a graph using ggplot.
+######3.) For the death plot, follow the same instruction but change the variables accordingly.
+
+---
+
