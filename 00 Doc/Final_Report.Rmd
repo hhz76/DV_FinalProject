@@ -93,7 +93,23 @@ output: html_document
 ######1.) For the top two graphs we did a table calculation summing the total birth counts for all race and age groups.
 ######2.) For the bottom two graphs we found the predominant age and race groups for each zip.
 
-#Conclusion:
-####In this report, we analyzed all factors that would contribute to the births and deaths of Californians. We summarized the possible outcomes as each elements affect the life cycle in this particular state. Lastly, we looked at the differences between total births and total deaths by area to see how the population is growing or declining.
+##Additional Charts:
 ![](./all_birth.png)
 ![](./all_death.png)
+
+####Taking a closer look by rescaling the y-axis:
+![](./birth_log.png)
+![](./death_log.png)
+
+####We get a heat map of the population with respective nature.
+
+####To reproduce this, follow these instructions:
+######1.) Using R Studio, make sure to have the correct packages (ggplot2, RCurl, reshape2, and tidyr).
+######2.) For the birth plot, use piping, we manipulate the m_birth data by first grouping it by zip_code and produce a graph using ggplot (density2d).
+######3.) To get the heat map, scale the y axis by log10. This will give a better understanding on the density of the population. (in this case, it is the birth population)
+######4.) Follow the same steps to reproduce graphs for death and death: heat map
+
+#Conclusion:
+####In this report, we analyzed all factors that would contribute to the births and deaths of Californians. We summarized the possible outcomes as each elements affect the life cycle in this particular state. Lastly, we looked at the differences between total births and total deaths by area to see how the population is growing or declining.
+
+###Thank you.
